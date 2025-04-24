@@ -681,6 +681,7 @@
             "description": "Map Option+V to / and Option+C to *",
             "manipulators": [
               {
+                "type": "basic",
                 "from": {
                   "key_code": "v",
                   "modifiers": {
@@ -696,10 +697,10 @@
                       "shift"
                     ]
                   }
-                ],
-                "type": "basic"
+                ]
               },
               {
+                "type": "basic",
                 "from": {
                   "key_code": "c",
                   "modifiers": {
@@ -712,10 +713,10 @@
                   {
                     "key_code": "backslash"
                   }
-                ],
-                "type": "basic"
+                ]
               },
               {
+                "type": "basic",
                 "from": {
                   "key_code": "n",
                   "modifiers": {
@@ -726,13 +727,9 @@
                 },
                 "to": [
                   {
-                    "key_code": "0",
-                    "modifiers": [
-                      "shift"
-                    ]
+                    "key_code": "equal_sign"
                   }
-                ],
-                "type": "basic"
+                ]
               }
             ]
           }
