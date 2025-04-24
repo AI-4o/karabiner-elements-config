@@ -1,0 +1,1872 @@
+{
+  "description": "rules for profile A of built-in keyboard",
+  "complex_modifications": {
+    "rules": [
+      {
+                "description": "Switch to Mode B with f13",
+                "manipulators": [
+                    {
+                        "from": { "key_code": "f13" },
+                        "to": [{ "shell_command": "/opt/homebrew/bin/karabiner_cli --select-profile B" }],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'a' to '4, q, 8, z, 2, 7, b, 5, 1'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "a" },
+                        "to": [
+                            { "key_code": "4" },
+                            { "key_code": "q" },
+                            { "key_code": "8" },
+                            { "key_code": "z" },
+                            { "key_code": "2" },
+                            { "key_code": "7" },
+                            { "key_code": "b" },
+                            { "key_code": "5" },
+                            { "key_code": "1" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'b' to '7, x, 3, 1, e, 9, c, 0, 4'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "b" },
+                        "to": [
+                            { "key_code": "7" },
+                            { "key_code": "x" },
+                            { "key_code": "3" },
+                            { "key_code": "1" },
+                            { "key_code": "e" },
+                            { "key_code": "9" },
+                            { "key_code": "c" },
+                            { "key_code": "0" },
+                            { "key_code": "4" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'c' to '2, 8, y, 6, 3, 7, v, 1, 5'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "c" },
+                        "to": [
+                            { "key_code": "2" },
+                            { "key_code": "8" },
+                            { "key_code": "y" },
+                            { "key_code": "6" },
+                            { "key_code": "3" },
+                            { "key_code": "7" },
+                            { "key_code": "v" },
+                            { "key_code": "1" },
+                            { "key_code": "5" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'd' to '9, w, 4, 2, 8, a, 7, 3, 0'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "d" },
+                        "to": [
+                            { "key_code": "9" },
+                            { "key_code": "w" },
+                            { "key_code": "4" },
+                            { "key_code": "2" },
+                            { "key_code": "8" },
+                            { "key_code": "a" },
+                            { "key_code": "7" },
+                            { "key_code": "3" },
+                            { "key_code": "0" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'e' to '1, s, 6, 8, 5, 2, d, 9, 4'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "e" },
+                        "to": [
+                            { "key_code": "1" },
+                            { "key_code": "s" },
+                            { "key_code": "6" },
+                            { "key_code": "8" },
+                            { "key_code": "5" },
+                            { "key_code": "2" },
+                            { "key_code": "d" },
+                            { "key_code": "9" },
+                            { "key_code": "4" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'f' to '0, e, 7, 3, q, 8, 2, z, 5'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "f" },
+                        "to": [
+                            { "key_code": "0" },
+                            { "key_code": "e" },
+                            { "key_code": "7" },
+                            { "key_code": "3" },
+                            { "key_code": "q" },
+                            { "key_code": "8" },
+                            { "key_code": "2" },
+                            { "key_code": "z" },
+                            { "key_code": "5" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'g' to '8, 4, u, 1, 5, w, 9, 3, 2'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "g" },
+                        "to": [
+                            { "key_code": "8" },
+                            { "key_code": "4" },
+                            { "key_code": "u" },
+                            { "key_code": "1" },
+                            { "key_code": "5" },
+                            { "key_code": "w" },
+                            { "key_code": "9" },
+                            { "key_code": "3" },
+                            { "key_code": "2" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'h' to '3, a, 9, 7, 2, x, 5, 6, 1'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "h" },
+                        "to": [
+                            { "key_code": "3" },
+                            { "key_code": "a" },
+                            { "key_code": "9" },
+                            { "key_code": "7" },
+                            { "key_code": "2" },
+                            { "key_code": "x" },
+                            { "key_code": "5" },
+                            { "key_code": "6" },
+                            { "key_code": "1" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'i' to '6, d, 2, 0, 8, z, 3, 7, 4'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "i" },
+                        "to": [
+                            { "key_code": "6" },
+                            { "key_code": "d" },
+                            { "key_code": "2" },
+                            { "key_code": "0" },
+                            { "key_code": "8" },
+                            { "key_code": "z" },
+                            { "key_code": "3" },
+                            { "key_code": "7" },
+                            { "key_code": "4" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'j' to '5, f, 8, 1, 3, b, 9, 6, 0'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "j" },
+                        "to": [
+                            { "key_code": "5" },
+                            { "key_code": "f" },
+                            { "key_code": "8" },
+                            { "key_code": "1" },
+                            { "key_code": "3" },
+                            { "key_code": "b" },
+                            { "key_code": "9" },
+                            { "key_code": "6" },
+                            { "key_code": "0" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'k' to '7, 3, c, 4, 2, 9, d, 8, 1'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "k" },
+                        "to": [
+                            { "key_code": "7" },
+                            { "key_code": "3" },
+                            { "key_code": "c" },
+                            { "key_code": "4" },
+                            { "key_code": "2" },
+                            { "key_code": "9" },
+                            { "key_code": "d" },
+                            { "key_code": "8" },
+                            { "key_code": "1" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'l' to '2, 0, g, 6, 1, 5, 4, 9, 3'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "l" },
+                        "to": [
+                            { "key_code": "2" },
+                            { "key_code": "0" },
+                            { "key_code": "g" },
+                            { "key_code": "6" },
+                            { "key_code": "1" },
+                            { "key_code": "5" },
+                            { "key_code": "4" },
+                            { "key_code": "9" },
+                            { "key_code": "3" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'm' to '4, 8, b, 7, 0, 3, 9, 2, 6'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "m" },
+                        "to": [
+                            { "key_code": "4" },
+                            { "key_code": "8" },
+                            { "key_code": "b" },
+                            { "key_code": "7" },
+                            { "key_code": "0" },
+                            { "key_code": "3" },
+                            { "key_code": "9" },
+                            { "key_code": "2" },
+                            { "key_code": "6" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'n' to '1, 9, x, 5, 8, 0, 3, 7, 4'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "n" },
+                        "to": [
+                            { "key_code": "1" },
+                            { "key_code": "9" },
+                            { "key_code": "x" },
+                            { "key_code": "5" },
+                            { "key_code": "8" },
+                            { "key_code": "0" },
+                            { "key_code": "3" },
+                            { "key_code": "7" },
+                            { "key_code": "4" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'o' to '3, 6, a, 2, 7, 5, 9, 1, 8'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "o" },
+                        "to": [
+                            { "key_code": "3" },
+                            { "key_code": "6" },
+                            { "key_code": "a" },
+                            { "key_code": "2" },
+                            { "key_code": "7" },
+                            { "key_code": "5" },
+                            { "key_code": "9" },
+                            { "key_code": "1" },
+                            { "key_code": "8" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'p' to '9, 2, t, 4, 1, 8, 5, 7, 0'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "p" },
+                        "to": [
+                            { "key_code": "9" },
+                            { "key_code": "2" },
+                            { "key_code": "t" },
+                            { "key_code": "4" },
+                            { "key_code": "1" },
+                            { "key_code": "8" },
+                            { "key_code": "5" },
+                            { "key_code": "7" },
+                            { "key_code": "0" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'q' to '5, 8, 3, 0, 7, 4, 2, 1, 9'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "q" },
+                        "to": [
+                            { "key_code": "5" },
+                            { "key_code": "8" },
+                            { "key_code": "3" },
+                            { "key_code": "0" },
+                            { "key_code": "7" },
+                            { "key_code": "4" },
+                            { "key_code": "2" },
+                            { "key_code": "1" },
+                            { "key_code": "9" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'r' to '6, 2, k, 8, 1, 0, 5, 3, 7'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "r" },
+                        "to": [
+                            { "key_code": "6" },
+                            { "key_code": "2" },
+                            { "key_code": "k" },
+                            { "key_code": "8" },
+                            { "key_code": "1" },
+                            { "key_code": "0" },
+                            { "key_code": "5" },
+                            { "key_code": "3" },
+                            { "key_code": "7" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 's' to '7, 9, 4, 1, 5, 0, 6, 2, 3'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "s" },
+                        "to": [
+                            { "key_code": "7" },
+                            { "key_code": "9" },
+                            { "key_code": "4" },
+                            { "key_code": "1" },
+                            { "key_code": "5" },
+                            { "key_code": "0" },
+                            { "key_code": "6" },
+                            { "key_code": "2" },
+                            { "key_code": "3" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 't' to '2, 5, 8, 3, 1, 4, 7, 9, 0'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "t" },
+                        "to": [
+                            { "key_code": "2" },
+                            { "key_code": "5" },
+                            { "key_code": "8" },
+                            { "key_code": "3" },
+                            { "key_code": "1" },
+                            { "key_code": "4" },
+                            { "key_code": "7" },
+                            { "key_code": "9" },
+                            { "key_code": "0" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'u' to '0, 1, 6, 9, 3, 7, 4, 5, 2'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "u" },
+                        "to": [
+                            { "key_code": "0" },
+                            { "key_code": "1" },
+                            { "key_code": "6" },
+                            { "key_code": "9" },
+                            { "key_code": "3" },
+                            { "key_code": "7" },
+                            { "key_code": "4" },
+                            { "key_code": "5" },
+                            { "key_code": "2" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'v' to '3, 7, 1, 0, 2, 5, 8, 4, 9'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "v" },
+                        "to": [
+                            { "key_code": "3" },
+                            { "key_code": "7" },
+                            { "key_code": "1" },
+                            { "key_code": "0" },
+                            { "key_code": "2" },
+                            { "key_code": "5" },
+                            { "key_code": "8" },
+                            { "key_code": "4" },
+                            { "key_code": "9" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'w' to '9, 4, 7, 2, 5, 0, 1, 6, 8'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "w" },
+                        "to": [
+                            { "key_code": "9" },
+                            { "key_code": "4" },
+                            { "key_code": "7" },
+                            { "key_code": "2" },
+                            { "key_code": "5" },
+                            { "key_code": "0" },
+                            { "key_code": "1" },
+                            { "key_code": "6" },
+                            { "key_code": "8" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'x' to '2, 3, 8, 1, 6, 7, 9, 4, 0'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "x" },
+                        "to": [
+                            { "key_code": "2" },
+                            { "key_code": "3" },
+                            { "key_code": "8" },
+                            { "key_code": "1" },
+                            { "key_code": "6" },
+                            { "key_code": "7" },
+                            { "key_code": "9" },
+                            { "key_code": "4" },
+                            { "key_code": "0" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'y' to '5, 1, 2, 9, 0, 3, 8, 7, 4'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "y" },
+                        "to": [
+                            { "key_code": "5" },
+                            { "key_code": "1" },
+                            { "key_code": "2" },
+                            { "key_code": "9" },
+                            { "key_code": "0" },
+                            { "key_code": "3" },
+                            { "key_code": "8" },
+                            { "key_code": "7" },
+                            { "key_code": "4" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'z' to '6, 8, 3, 4, 1, 7, 2, 9, 0'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "z" },
+                        "to": [
+                            { "key_code": "6" },
+                            { "key_code": "8" },
+                            { "key_code": "3" },
+                            { "key_code": "4" },
+                            { "key_code": "1" },
+                            { "key_code": "7" },
+                            { "key_code": "2" },
+                            { "key_code": "9" },
+                            { "key_code": "0" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '0' to 'a1b2c3d'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "0" },
+                        "to": [
+                            { "key_code": "a" },
+                            { "key_code": "1" },
+                            { "key_code": "b" },
+                            { "key_code": "2" },
+                            { "key_code": "c" },
+                            { "key_code": "3" },
+                            { "key_code": "d" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '1' to 'e4f5g6h'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "1" },
+                        "to": [
+                            { "key_code": "e" },
+                            { "key_code": "4" },
+                            { "key_code": "f" },
+                            { "key_code": "5" },
+                            { "key_code": "g" },
+                            { "key_code": "6" },
+                            { "key_code": "h" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '2' to 'i7j8k9l'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "2" },
+                        "to": [
+                            { "key_code": "i" },
+                            { "key_code": "7" },
+                            { "key_code": "j" },
+                            { "key_code": "8" },
+                            { "key_code": "k" },
+                            { "key_code": "9" },
+                            { "key_code": "l" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '3' to 'm0n1o2p'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "3" },
+                        "to": [
+                            { "key_code": "m" },
+                            { "key_code": "0" },
+                            { "key_code": "n" },
+                            { "key_code": "1" },
+                            { "key_code": "o" },
+                            { "key_code": "2" },
+                            { "key_code": "p" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '4' to 'q3r4s5t'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "4" },
+                        "to": [
+                            { "key_code": "q" },
+                            { "key_code": "3" },
+                            { "key_code": "r" },
+                            { "key_code": "4" },
+                            { "key_code": "s" },
+                            { "key_code": "5" },
+                            { "key_code": "t" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '5' to 'u6v7w8x'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "5" },
+                        "to": [
+                            { "key_code": "u" },
+                            { "key_code": "6" },
+                            { "key_code": "v" },
+                            { "key_code": "7" },
+                            { "key_code": "w" },
+                            { "key_code": "8" },
+                            { "key_code": "x" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '6' to 'y9z0a1b'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "6" },
+                        "to": [
+                            { "key_code": "y" },
+                            { "key_code": "9" },
+                            { "key_code": "z" },
+                            { "key_code": "0" },
+                            { "key_code": "a" },
+                            { "key_code": "1" },
+                            { "key_code": "b" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '7' to 'c2d3e4f'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "7" },
+                        "to": [
+                            { "key_code": "c" },
+                            { "key_code": "2" },
+                            { "key_code": "d" },
+                            { "key_code": "3" },
+                            { "key_code": "e" },
+                            { "key_code": "4" },
+                            { "key_code": "f" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '8' to 'g5h6i7j'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "8" },
+                        "to": [
+                            { "key_code": "g" },
+                            { "key_code": "5" },
+                            { "key_code": "h" },
+                            { "key_code": "6" },
+                            { "key_code": "i" },
+                            { "key_code": "7" },
+                            { "key_code": "j" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '9' to 'k8l9m0n'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "9" },
+                        "to": [
+                            { "key_code": "k" },
+                            { "key_code": "8" },
+                            { "key_code": "l" },
+                            { "key_code": "9" },
+                            { "key_code": "m" },
+                            { "key_code": "0" },
+                            { "key_code": "n" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'ò' to 'o1p2q3r'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "grave_accent_and_tilde" },
+                        "to": [
+                            { "key_code": "o" },
+                            { "key_code": "1" },
+                            { "key_code": "p" },
+                            { "key_code": "2" },
+                            { "key_code": "q" },
+                            { "key_code": "3" },
+                            { "key_code": "r" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'é' to 's4t5u6v'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "quote" },
+                        "to": [
+                            { "key_code": "s" },
+                            { "key_code": "4" },
+                            { "key_code": "t" },
+                            { "key_code": "5" },
+                            { "key_code": "u" },
+                            { "key_code": "6" },
+                            { "key_code": "v" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'à' to 'w7x8y9z'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "open_bracket" },
+                        "to": [
+                            { "key_code": "w" },
+                            { "key_code": "7" },
+                            { "key_code": "x" },
+                            { "key_code": "8" },
+                            { "key_code": "y" },
+                            { "key_code": "9" },
+                            { "key_code": "z" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'ì' to 'a0b1c2d'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "close_bracket" },
+                        "to": [
+                            { "key_code": "a" },
+                            { "key_code": "0" },
+                            { "key_code": "b" },
+                            { "key_code": "1" },
+                            { "key_code": "c" },
+                            { "key_code": "2" },
+                            { "key_code": "d" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'ù' to 'e3f4g5h'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "backslash" },
+                        "to": [
+                            { "key_code": "e" },
+                            { "key_code": "3" },
+                            { "key_code": "f" },
+                            { "key_code": "4" },
+                            { "key_code": "g" },
+                            { "key_code": "5" },
+                            { "key_code": "h" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK ',' to 'i6j7k8l'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "comma" },
+                        "to": [
+                            { "key_code": "i" },
+                            { "key_code": "6" },
+                            { "key_code": "j" },
+                            { "key_code": "7" },
+                            { "key_code": "k" },
+                            { "key_code": "8" },
+                            { "key_code": "l" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '.' to 'm9n0o1p'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "period" },
+                        "to": [
+                            { "key_code": "m" },
+                            { "key_code": "9" },
+                            { "key_code": "n" },
+                            { "key_code": "0" },
+                            { "key_code": "o" },
+                            { "key_code": "1" },
+                            { "key_code": "p" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '<' to 'q2r3s4t'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "non_us_backslash" },
+                        "to": [
+                            { "key_code": "q" },
+                            { "key_code": "2" },
+                            { "key_code": "r" },
+                            { "key_code": "3" },
+                            { "key_code": "s" },
+                            { "key_code": "4" },
+                            { "key_code": "t" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '>' to 'u5v6w7x'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "non_us_backslash" },
+                        "to": [
+                            { "key_code": "u" },
+                            { "key_code": "5" },
+                            { "key_code": "v" },
+                            { "key_code": "6" },
+                            { "key_code": "w" },
+                            { "key_code": "7" },
+                            { "key_code": "x" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '!' to 'y8z9a0b'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "1", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "y" },
+                            { "key_code": "8" },
+                            { "key_code": "z" },
+                            { "key_code": "9" },
+                            { "key_code": "a" },
+                            { "key_code": "0" },
+                            { "key_code": "b" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '?' to 'c1d2e3f'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "slash", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "c" },
+                            { "key_code": "1" },
+                            { "key_code": "d" },
+                            { "key_code": "2" },
+                            { "key_code": "e" },
+                            { "key_code": "3" },
+                            { "key_code": "f" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK ';' to 'g4h5i6j'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "semicolon" },
+                        "to": [
+                            { "key_code": "g" },
+                            { "key_code": "4" },
+                            { "key_code": "h" },
+                            { "key_code": "5" },
+                            { "key_code": "i" },
+                            { "key_code": "6" },
+                            { "key_code": "j" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK ':' to 'k7l8m9n'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "semicolon", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "k" },
+                            { "key_code": "7" },
+                            { "key_code": "l" },
+                            { "key_code": "8" },
+                            { "key_code": "m" },
+                            { "key_code": "9" },
+                            { "key_code": "n" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '@' to 'o0p1q2r'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "2", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "o" },
+                            { "key_code": "0" },
+                            { "key_code": "p" },
+                            { "key_code": "1" },
+                            { "key_code": "q" },
+                            { "key_code": "2" },
+                            { "key_code": "r" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '#' to 's3t4u5v'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "3", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "s" },
+                            { "key_code": "3" },
+                            { "key_code": "t" },
+                            { "key_code": "4" },
+                            { "key_code": "u" },
+                            { "key_code": "5" },
+                            { "key_code": "v" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '$' to 'w6x7y8z'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "4", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "w" },
+                            { "key_code": "6" },
+                            { "key_code": "x" },
+                            { "key_code": "7" },
+                            { "key_code": "y" },
+                            { "key_code": "8" },
+                            { "key_code": "z" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '%' to 'a9b0c1d'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "5", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "a" },
+                            { "key_code": "9" },
+                            { "key_code": "b" },
+                            { "key_code": "0" },
+                            { "key_code": "c" },
+                            { "key_code": "1" },
+                            { "key_code": "d" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '&' to 'e2f3g4h'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "6", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "e" },
+                            { "key_code": "2" },
+                            { "key_code": "f" },
+                            { "key_code": "3" },
+                            { "key_code": "g" },
+                            { "key_code": "4" },
+                            { "key_code": "h" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '*' to 'i5j6k7l'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "8", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "i" },
+                            { "key_code": "5" },
+                            { "key_code": "j" },
+                            { "key_code": "6" },
+                            { "key_code": "k" },
+                            { "key_code": "7" },
+                            { "key_code": "l" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '(' to 'm8n9o0p'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "9", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "m" },
+                            { "key_code": "8" },
+                            { "key_code": "n" },
+                            { "key_code": "9" },
+                            { "key_code": "o" },
+                            { "key_code": "0" },
+                            { "key_code": "p" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK ')' to 'q1r2s3t'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "0", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "q" },
+                            { "key_code": "1" },
+                            { "key_code": "r" },
+                            { "key_code": "2" },
+                            { "key_code": "s" },
+                            { "key_code": "3" },
+                            { "key_code": "t" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '-' to 'u4v5w6x'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "hyphen" },
+                        "to": [
+                            { "key_code": "u" },
+                            { "key_code": "4" },
+                            { "key_code": "v" },
+                            { "key_code": "5" },
+                            { "key_code": "w" },
+                            { "key_code": "6" },
+                            { "key_code": "x" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '_' to 'y7z8a9b'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "hyphen", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "y" },
+                            { "key_code": "7" },
+                            { "key_code": "z" },
+                            { "key_code": "8" },
+                            { "key_code": "a" },
+                            { "key_code": "9" },
+                            { "key_code": "b" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '+' to 'c0d1e2f'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "equal_sign", "modifiers": {"mandatory": ["shift"]} },
+                        "to": [
+                            { "key_code": "c" },
+                            { "key_code": "0" },
+                            { "key_code": "d" },
+                            { "key_code": "1" },
+                            { "key_code": "e" },
+                            { "key_code": "2" },
+                            { "key_code": "f" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK '=' to 'g3h4i5j'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "equal_sign" },
+                        "to": [
+                            { "key_code": "g" },
+                            { "key_code": "3" },
+                            { "key_code": "h" },
+                            { "key_code": "4" },
+                            { "key_code": "i" },
+                            { "key_code": "5" },
+                            { "key_code": "j" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            },
+            {
+                "description": "BIK 'a' to '4, q, 8, z, 2, 7, b, 5, 1'",
+                "manipulators": [
+                    {
+                        "conditions": [
+                            {
+                                "identifiers": [
+                                    {
+                                        "is_built_in_keyboard": true,
+                                        "location_id": 172
+                                    }
+                                ],
+                                "type": "device_if"
+                            }
+                        ],
+                        "from": { "key_code": "a" },
+                        "to": [
+                            { "key_code": "4" },
+                            { "key_code": "q" },
+                            { "key_code": "8" },
+                            { "key_code": "z" },
+                            { "key_code": "2" },
+                            { "key_code": "7" },
+                            { "key_code": "b" },
+                            { "key_code": "5" },
+                            { "key_code": "1" }
+                        ],
+                        "type": "basic"
+                    }
+                ]
+            }
+        ]
+    },
+    "name": "A",
+    "selected": true,
+    "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
+  }

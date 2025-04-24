@@ -1,0 +1,723 @@
+{
+    "global": { "show_profile_name_in_menu_bar": true },
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Switch to Mode B with f13",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "f13" },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/karabiner_cli --select-profile 'B'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Switch to Mode B with f4",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "f4" },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/karabiner_cli --select-profile 'B'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Map caps_lock to enter",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "caps_lock" },
+                                "to": [{ "key_code": "return_or_enter" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Home row keys (ASDF/JKL;) as modifiers when held, letters when tapped",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": {
+                                    "basic.to_delayed_action_delay_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                },
+                                "to_delayed_action": { "to_if_canceled": [{ "key_code": "a" }] },
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "a"
+                                    }
+                                ],
+                                "to_if_held_down": [{ "key_code": "left_shift" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": {
+                                    "basic.to_delayed_action_delay_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                },
+                                "to_delayed_action": { "to_if_canceled": [{ "key_code": "s" }] },
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "s"
+                                    }
+                                ],
+                                "to_if_held_down": [{ "key_code": "left_control" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": {
+                                    "basic.to_delayed_action_delay_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                },
+                                "to_delayed_action": { "to_if_canceled": [{ "key_code": "d" }] },
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "d"
+                                    }
+                                ],
+                                "to_if_held_down": [{ "key_code": "left_option" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": {
+                                    "basic.to_delayed_action_delay_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                },
+                                "to_delayed_action": { "to_if_canceled": [{ "key_code": "f" }] },
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "f"
+                                    }
+                                ],
+                                "to_if_held_down": [{ "key_code": "left_command" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": {
+                                    "basic.to_delayed_action_delay_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                },
+                                "to_delayed_action": { "to_if_canceled": [{ "key_code": "j" }] },
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "j"
+                                    }
+                                ],
+                                "to_if_held_down": [{ "key_code": "right_command" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": {
+                                    "basic.to_delayed_action_delay_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                },
+                                "to_delayed_action": { "to_if_canceled": [{ "key_code": "k" }] },
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "k"
+                                    }
+                                ],
+                                "to_if_held_down": [{ "key_code": "right_option" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": {
+                                    "basic.to_delayed_action_delay_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                },
+                                "to_delayed_action": { "to_if_canceled": [{ "key_code": "l" }] },
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "l"
+                                    }
+                                ],
+                                "to_if_held_down": [{ "key_code": "right_control" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": {
+                                    "basic.to_delayed_action_delay_milliseconds": 200,
+                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                },
+                                "to_delayed_action": { "to_if_canceled": [{ "key_code": "semicolon" }] },
+                                "to_if_alone": [
+                                    {
+                                        "halt": true,
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "to_if_held_down": [{ "key_code": "right_shift" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "h + control + shift sends }",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": ["control", "shift"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": ["left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "h + control sends ]",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "close_bracket" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "h + shift sends (",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": ["shift"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "9",
+                                        "modifiers": ["left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "y + control + shift sends {",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": {
+                                        "mandatory": ["control", "shift"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": ["left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "y + control sends [",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "open_bracket" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "y + shift sends (",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": {
+                                        "mandatory": ["shift"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "8",
+                                        "modifiers": ["left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "name": "A",
+            "selected": true,
+            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
+        },
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Switch to Mode A with f2",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "f2" },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/karabiner_cli --select-profile 'A'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Switch to Mode A with f4",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "f4" },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/karabiner_cli --select-profile 'A'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'a' to '4, q, 8, z'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "a" },
+                                "to": [
+                                    { "key_code": "4" },
+                                    { "key_code": "q" },
+                                    { "key_code": "8" },
+                                    { "key_code": "z" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'b' to '7, x, 3, 1'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "b" },
+                                "to": [
+                                    { "key_code": "7" },
+                                    { "key_code": "x" },
+                                    { "key_code": "3" },
+                                    { "key_code": "1" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'c' to '2, 8, y, 6'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "c" },
+                                "to": [
+                                    { "key_code": "2" },
+                                    { "key_code": "8" },
+                                    { "key_code": "y" },
+                                    { "key_code": "6" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'd' to '9, w, 4, 2'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "d" },
+                                "to": [
+                                    { "key_code": "9" },
+                                    { "key_code": "w" },
+                                    { "key_code": "4" },
+                                    { "key_code": "2" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'e' to '1, s, 6, 8'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "e" },
+                                "to": [
+                                    { "key_code": "1" },
+                                    { "key_code": "s" },
+                                    { "key_code": "6" },
+                                    { "key_code": "8" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'f' to '0, e, 7, 3'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "f" },
+                                "to": [
+                                    { "key_code": "0" },
+                                    { "key_code": "e" },
+                                    { "key_code": "7" },
+                                    { "key_code": "3" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'g' to '8, 4, u'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "g" },
+                                "to": [
+                                    { "key_code": "8" },
+                                    { "key_code": "4" },
+                                    { "key_code": "u" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'h' to '3, a, 9'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "h" },
+                                "to": [
+                                    { "key_code": "3" },
+                                    { "key_code": "a" },
+                                    { "key_code": "9" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'i' to '6, d, 2'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "i" },
+                                "to": [
+                                    { "key_code": "6" },
+                                    { "key_code": "d" },
+                                    { "key_code": "2" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'j' to '5, f, 8'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "j" },
+                                "to": [
+                                    { "key_code": "5" },
+                                    { "key_code": "f" },
+                                    { "key_code": "8" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'k' to '7, 3, c'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "k" },
+                                "to": [
+                                    { "key_code": "7" },
+                                    { "key_code": "3" },
+                                    { "key_code": "c" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'l' to '2, 0, g'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "l" },
+                                "to": [
+                                    { "key_code": "2" },
+                                    { "key_code": "0" },
+                                    { "key_code": "g" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'm' to '4, 8, b, 7'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "m" },
+                                "to": [
+                                    { "key_code": "4" },
+                                    { "key_code": "8" },
+                                    { "key_code": "b" },
+                                    { "key_code": "7" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'n' to '1, 9, x, 5'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "n" },
+                                "to": [
+                                    { "key_code": "1" },
+                                    { "key_code": "9" },
+                                    { "key_code": "x" },
+                                    { "key_code": "5" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'o' to '3, 6, a, 2'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "o" },
+                                "to": [
+                                    { "key_code": "3" },
+                                    { "key_code": "6" },
+                                    { "key_code": "a" },
+                                    { "key_code": "2" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'p' to '9, 2, t'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "p" },
+                                "to": [
+                                    { "key_code": "9" },
+                                    { "key_code": "2" },
+                                    { "key_code": "t" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'q' to '5, 8, 3, 0'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "q" },
+                                "to": [
+                                    { "key_code": "5" },
+                                    { "key_code": "8" },
+                                    { "key_code": "3" },
+                                    { "key_code": "0" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'r' to '6, 2, k",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "r" },
+                                "to": [
+                                    { "key_code": "6" },
+                                    { "key_code": "2" },
+                                    { "key_code": "k" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 's' to '7, 9, 4'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "s" },
+                                "to": [
+                                    { "key_code": "7" },
+                                    { "key_code": "9" },
+                                    { "key_code": "4" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 't' to '2, 5, 8, 3'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "t" },
+                                "to": [
+                                    { "key_code": "2" },
+                                    { "key_code": "5" },
+                                    { "key_code": "8" },
+                                    { "key_code": "3" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'u' to '0, 1, 6, 9'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "u" },
+                                "to": [
+                                    { "key_code": "0" },
+                                    { "key_code": "1" },
+                                    { "key_code": "6" },
+                                    { "key_code": "9" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'v' to '3, 7, 1'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "v" },
+                                "to": [
+                                    { "key_code": "3" },
+                                    { "key_code": "7" },
+                                    { "key_code": "1" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'w' to '9, 4, 7, 2'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "w" },
+                                "to": [
+                                    { "key_code": "9" },
+                                    { "key_code": "4" },
+                                    { "key_code": "7" },
+                                    { "key_code": "2" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'x' to '2, 3, 8'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "x" },
+                                "to": [
+                                    { "key_code": "2" },
+                                    { "key_code": "3" },
+                                    { "key_code": "8" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'y' to '5, 1, 2, 9'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "y" },
+                                "to": [
+                                    { "key_code": "5" },
+                                    { "key_code": "1" },
+                                    { "key_code": "2" },
+                                    { "key_code": "9" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "BIK 'z' to '6, 8, 3'",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "z" },
+                                "to": [
+                                    { "key_code": "6" },
+                                    { "key_code": "8" },
+                                    { "key_code": "3" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "name": "B",
+            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
+        }
+    ]
+}
