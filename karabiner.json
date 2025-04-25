@@ -701,22 +701,6 @@
               },
               {
                 "from": {
-                  "key_code": "c",
-                  "modifiers": {
-                    "mandatory": [
-                      "option"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "backslash"
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
                   "key_code": "n",
                   "modifiers": {
                     "mandatory": [
