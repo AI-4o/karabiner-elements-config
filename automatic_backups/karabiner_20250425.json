@@ -678,7 +678,7 @@
             ]
           },
           {
-            "description": "Map Option+v to /, Option+c to *, Option+n to =, Option+z to $",
+            "description": "Map Option+V to / and Option+C to *",
             "manipulators": [
               {
                 "from": {
@@ -765,25 +765,6 @@
                 "to": [
                   {
                     "key_code": "2",
-                    "modifiers": [
-                      "shift"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "z",
-                  "modifiers": {
-                    "mandatory": [
-                      "option"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "4",
                     "modifiers": [
                       "shift"
                     ]
