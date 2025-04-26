@@ -758,7 +758,7 @@
               },
               {
                 "from": {
-                  "key_code": "z",
+                  "key_code": "c",
                   "modifiers": {
                     "mandatory": [
                       "option"
@@ -768,6 +768,25 @@
                 "to": [
                   {
                     "key_code": "4",
+                    "modifiers": [
+                      "shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "z",
+                  "modifiers": {
+                    "mandatory": [
+                      "option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "1",
                     "modifiers": [
                       "shift"
                     ]
