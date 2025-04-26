@@ -748,7 +748,10 @@
                 },
                 "to": [
                   {
-                    "key_code": "hyphen"
+                    "key_code": "2",
+                    "modifiers": [
+                      "shift"
+                    ]
                   }
                 ],
                 "type": "basic"
