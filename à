@@ -678,7 +678,7 @@
             ]
           },
           {
-            "description": "Map Option+v to /, Option+c to *, Option+n to =, Option+z to $",
+            "description": "Map Option+: v to /, x to *, n to =, c to $, . to %, , to ''",
             "manipulators": [
               {
                 "from": {
@@ -710,14 +710,14 @@
                 },
                 "to": [
                   {
-                    "key_code": "close_bracket",
+                    "key_code": "7",
                     "modifiers": [
                       "shift"
                     ]
                   }
                 ],
                 "type": "basic"
-              },
+              }
               {
                 "from": {
                   "key_code": "n",
@@ -1484,23 +1484,6 @@
               {
                 "from": {
                   "key_code": "f3"
-                },
-                "to": [
-                  {
-                    "shell_command": "/opt/homebrew/bin/karabiner_cli --select-profile 'A'"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Switch to Mode A with f4",
-            "enabled": false,
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "f4"
                 },
                 "to": [
                   {
