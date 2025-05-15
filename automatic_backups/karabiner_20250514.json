@@ -5,26 +5,11 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "à to $",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "quote" },
-                                "to": [
-                                    {
-                                        "key_code": "4",
-                                        "modifiers": ["right_shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "shift + h to ( , shift + j to {",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "k",
+                                    "key_code": "j",
                                     "modifiers": {
                                         "mandatory": ["shift"],
                                         "optional": ["any"]
@@ -33,14 +18,14 @@
                                 "to": [
                                     {
                                         "key_code": "open_bracket",
-                                        "modifiers": ["left_option"]
+                                        "modifiers": ["left_shift", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "h",
                                     "modifiers": {
                                         "mandatory": ["shift"],
                                         "optional": ["any"]
@@ -56,7 +41,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "j",
                                     "modifiers": {
                                         "mandatory": ["shift"],
                                         "optional": ["any"]
@@ -65,22 +50,6 @@
                                 "to": [
                                     {
                                         "key_code": "open_bracket",
-                                        "modifiers": ["shift", "left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "h",
-                                    "modifiers": {
-                                        "mandatory": ["shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "2",
                                         "modifiers": ["shift"]
                                     }
                                 ],
@@ -89,33 +58,14 @@
                         ]
                     },
                     {
-                        "description": "⌘ → /, ⌘+Shift → ?",
+                        "description": "Map right_command to / (Shift+7)",
                         "manipulators": [
                             {
-                                "from": {
-                                    "key_code": "right_command",
-                                    "modifiers": {
-                                        "mandatory": ["shift"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "hyphen",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "right_command",
-                                    "modifiers": { "optional": ["caps_lock"] }
-                                },
+                                "from": { "key_code": "right_command" },
                                 "to": [
                                     {
                                         "key_code": "7",
-                                        "modifiers": ["shift"]
+                                        "modifiers": ["right_shift"]
                                     }
                                 ],
                                 "type": "basic"
