@@ -472,32 +472,6 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "v",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "5",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "2",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
                             }
                         ]
                     }
@@ -513,22 +487,6 @@
                 {
                     "from": { "key_code": "grave_accent_and_tilde" },
                     "to": [{ "key_code": "left_shift" }]
-                },
-                {
-                    "from": { "key_code": "left_option" },
-                    "to": [{ "key_code": "left_control" }]
-                },
-                {
-                    "from": { "key_code": "left_shift" },
-                    "to": [{ "key_code": "tab" }]
-                },
-                {
-                    "from": { "key_code": "right_option" },
-                    "to": [{ "key_code": "right_shift" }]
-                },
-                {
-                    "from": { "key_code": "tab" },
-                    "to": [{ "key_code": "right_shift" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
