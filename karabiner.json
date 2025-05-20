@@ -42,14 +42,30 @@
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
-                                        "mandatory": ["shift"],
+                                        "mandatory": ["left_command"],
                                         "optional": ["any"]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "open_bracket",
-                                        "modifiers": ["left_option"]
+                                        "key_code": "0",
+                                        "modifiers": ["shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": ["left_command"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "slash",
+                                        "modifiers": ["shift"]
                                     }
                                 ],
                                 "type": "basic"
@@ -122,7 +138,7 @@
                                 "from": { "key_code": "open_bracket" },
                                 "to": [
                                     {
-                                        "key_code": "0",
+                                        "key_code": "6",
                                         "modifiers": ["shift"]
                                     }
                                 ],
@@ -524,10 +540,6 @@
                 },
                 {
                     "from": { "key_code": "right_option" },
-                    "to": [{ "key_code": "right_shift" }]
-                },
-                {
-                    "from": { "key_code": "tab" },
                     "to": [{ "key_code": "right_shift" }]
                 }
             ],
