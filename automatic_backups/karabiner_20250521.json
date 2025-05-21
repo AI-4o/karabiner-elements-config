@@ -40,6 +40,22 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": ["left_command"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "0",
+                                        "modifiers": ["shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "m",
                                     "modifiers": {
                                         "mandatory": ["left_command"],
@@ -82,22 +98,6 @@
                                     {
                                         "key_code": "open_bracket",
                                         "modifiers": ["shift", "left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": ["shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "open_bracket",
-                                        "modifiers": ["left_option"]
                                     }
                                 ],
                                 "type": "basic"
@@ -532,7 +532,7 @@
                 },
                 {
                     "from": { "key_code": "left_option" },
-                    "to": [{ "key_code": "left_shift" }]
+                    "to": [{ "key_code": "left_control" }]
                 },
                 {
                     "from": { "key_code": "left_shift" },
