@@ -321,7 +321,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "1"
+                    "key_code": "semicolon"
                   }
                 ],
                 "type": "basic"
